@@ -189,13 +189,13 @@ Q.budget = 4;
 
 // Proportion of different social groups
 // source: https://durham-repository.worktribe.com/output/1443513/
-Q.precariat = 15; // poorest and most deprived
-Q.service_workers = 19; // emergent service workers
-Q.traditional_workers = 14; // traditional working class
-Q.affluent_workers = 15; // new affluent workers
-Q.technical_middle = 6; // technical middle class
-Q.established_middle = 25; // established middle class
-Q.elite = 6; // elite
+Q.precariat = 15; // poorest and most deprived, tend not to socialise outside their class, have an overall low range of cultural interests and most rent homes in old industrial areas
+Q.service_workers = 19; // financially insecure, have broad contacts with other classes, enjoy emerging culture like gigs, sports and social media, and live in inexpensive urban cities
+Q.traditional_workers = 14; // have some financial security, tend not to socialise outside their class, tend not to enjoy emerging culture like gigs, sports and social media, usually own their homes
+Q.affluent_workers = 15; // financially secure but not well-off, usually have a working class background, strongly enjoy emerging culture but dislike highbrow culture like music and theatre, tend to live in the old industrial areas
+Q.technical_middle = 6; //  prosperous, tend to mix with their own class and have middle class backgrounds, somewhat prefer emerging culture to highbrow culture, tend to live in suburban areas like the south east
+Q.established_middle = 25; // second most wealthy, socialise with a broad range of classes and have middle class backgrounds, enjoy a wide range of culture, often live outside urban areas
+Q.elites = 6; // wealthies and most privilleged, have a wide range of contacts but their background is privilleged, have a high enjoyment of all culture, most own their own houses in london or the home counties
 
 // income for industrial workers in reichsmarks/year - 1928 = 1600 Reichsmarks/year; 1931 = 1440 Reichsmarks/year; 1933 = 1138 Reichsmarks/year - source: https://babel.hathitrust.org/cgi/pt?id=uiug.30112104147985&seq=50
 Q.income = 1600;
@@ -217,60 +217,60 @@ Q.unemployed_qol = 100;
 Q.old_middle_qol = 100;
 Q.new_middle_qol = 100;
 
-Q.classes = ['precariat', 'service_workers', 'traditional_workers', 'affluent_workers', 'technical_middle', 'established_middle', 'elite'];
+Q.classes = ['precariat', 'service_workers', 'traditional_workers', 'affluent_workers', 'technical_middle', 'established_middle', 'elites'];
 Q.parties = ['labour', 'green', 'libdem', 'tory', 'ukip', 'other'];
 
 // Support for party by social group
 // they don't have to sum to 100 since the electoral calculations will be normalized.
 //TODO: what would this look like in 2014?
-Q.precariat_labour = 60;
-Q.precariat_green = 60;
-Q.precariat_libdem = 60;
-Q.precariat_tory = 60;
-Q.precariat_ukip = 60;
-Q.precariat_other = 60;
+Q.precariat_labour = 34;
+Q.precariat_green = 4;
+Q.precariat_libdem = 7;
+Q.precariat_tory = 32;
+Q.precariat_ukip = 16;
+Q.precariat_other = 7;
 
-Q.service_workers_labour = 60;
-Q.service_workers_green = 60;
-Q.service_workers_libdem = 60;
-Q.service_workers_tory = 60;
-Q.service_workers_ukip = 60;
-Q.service_workers_other = 60;
+Q.service_workers_labour = 32;
+Q.service_workers_green = 5;
+Q.service_workers_libdem = 8;
+Q.service_workers_tory = 36;
+Q.service_workers_ukip = 13;
+Q.service_workers_other = 6;
 
-Q.traditional_workers_labour = 60;
-Q.traditional_workers_green = 60;
-Q.traditional_workers_libdem = 60;
-Q.traditional_workers_tory = 60;
-Q.traditional_workers_ukip = 60;
-Q.traditional_workers_other = 60;
+Q.traditional_workers_labour = 29;
+Q.traditional_workers_green = 3;
+Q.traditional_workers_libdem = 7;
+Q.traditional_workers_tory = 39;
+Q.traditional_workers_ukip = 16;
+Q.traditional_workers_other = 6;
 
-Q.affluent_workers_labour = 60;
-Q.affluent_workers_green = 60;
-Q.affluent_workers_libdem = 60;
-Q.affluent_workers_tory = 60;
-Q.affluent_workers_ukip = 60;
-Q.affluent_workers_other = 60;
+Q.affluent_workers_labour = 31;
+Q.affluent_workers_green = 4;
+Q.affluent_workers_libdem = 7;
+Q.affluent_workers_tory = 37;
+Q.affluent_workers_ukip = 14;
+Q.affluent_workers_other = 7;
 
-Q.technical_middle_labour = 60;
-Q.technical_middle_green = 60;
-Q.technical_middle_libdem = 60;
-Q.technical_middle_tory = 60;
-Q.technical_middle_ukip = 60;
-Q.technical_middle_other = 60;
+Q.technical_middle_labour = 33;
+Q.technical_middle_green = 5;
+Q.technical_middle_libdem = 8;
+Q.technical_middle_tory = 36;
+Q.technical_middle_ukip = 13;
+Q.technical_middle_other = 5;
 
-Q.established_middle_labour = 60;
-Q.established_middle_green = 60;
-Q.established_middle_libdem = 60;
-Q.established_middle_tory = 60;
-Q.established_middle_ukip = 60;
-Q.established_middle_other = 60;
+Q.established_middle_labour = 33;
+Q.established_middle_green = 5;
+Q.established_middle_libdem = 8;
+Q.established_middle_tory = 36;
+Q.established_middle_ukip = 11;
+Q.established_middle_other = 7;
 
-Q.elite_labour = 60;
-Q.elite_green = 60;
-Q.elite_libdem = 60;
-Q.elite_tory = 60;
-Q.elite_ukip = 60;
-Q.elite_other = 60;
+Q.elites_labour = 27;
+Q.elites_green = 3;
+Q.elites_libdem = 9;
+Q.elites_tory = 45;
+Q.elites_ukip = 12;
+Q.elites_other = 4;
 
 
 // Current Reichstag composition
