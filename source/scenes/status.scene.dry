@@ -106,17 +106,17 @@ Q.socialism_disp = Math.round(Q.socialism);
 
 (if the election were to be held now):
 
-Labour: [+ labour_votes_dec +]%
+Labour: [+ labour_votes +]%
 
-Greens: [+ green_votes_dec +]%
+Greens: [+ green_votes +]%
 
-Lib Dems: [+ libdem_votes_dec +]%
+Lib Dems: [+ libdem_votes +]%
 
-Tories: [+ tory_votes_dec +]%
+Tories: [+ tory_votes +]%
 
-UKIP: [+ ukip_votes_dec +]%
+UKIP: [+ ukip_votes +]%
 
-Others: [+ other_votes_dec +]%
+Others: [+ other_votes +]%
 
 **Detailed results for each demographic**
 
