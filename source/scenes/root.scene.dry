@@ -308,6 +308,14 @@ Q.old_sdlp_r = 0.5;
 Q.old_sf_r = 0.8;
 Q.old_other_r = 0.2;
 
+// testing
+Q.labour_votes = 30.4;
+Q.green_votes = 3.8;
+Q.libdem_votes = 7.9;
+Q.tory_votes = 36.8;
+Q.ukip_votes = 12.6;
+Q.other_votes = 8.5;
+
 // for replacing UKIP with Reform
 Q.ukip_name = "UKIP";
 
