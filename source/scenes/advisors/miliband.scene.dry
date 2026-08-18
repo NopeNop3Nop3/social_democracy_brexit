@@ -1,8 +1,8 @@
 title: Ed Miliband
 is-pinned-card: true
-tags: advisor, left
-card-image: img/portraits/SenderToni.jpg
-view-if: milibdand_advisor = 1
+tags: advisor, soft left
+card-image: img/portraits/MilibandEd.jpg
+view-if: miliband_advisor = 1
 new-page: true 
 
 = Ed Miliband
