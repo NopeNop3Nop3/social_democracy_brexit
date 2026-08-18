@@ -522,35 +522,35 @@ Q.kpd_ultimatum_timer = 0;
 Q.march_on_berlin_timer = 0;
 
 // Hard Left  advisors
-Q.corbyn_advisor = 0; // Jeremy Corbyn
-Q.smith_advisor = 0; // Owen Smith
-Q.long-bailey_advisor = 0; // Rebecca Long-Bailey
-Q.mcdonnell_advisor = 0; // John McDonnell
-Q.abbott_advisor = 0; // Diane Abbott
+// Q.corbyn_advisor = 0; // Jeremy Corbyn
+// Q.smith_advisor = 0; // Owen Smith
+// Q.long-bailey_advisor = 0; // Rebecca Long-Bailey
+// Q.mcdonnell_advisor = 0; // John McDonnell
+// Q.abbott_advisor = 0; // Diane Abbott
 
 // Soft Left advisors
 Q.miliband_advisor = 1; // Ed Miliband
-Q.burnham_advisor = 0; // Andy Burnham
-Q.eagle_advisor = 0; // Angela Eagle
-Q.dodds_advisor = 0; // Anneliese Dodds
-Q.reeves_advisor = 0; // Rachel Reeves
-Q.lammy_advisor = 0; // David Lammy
+// Q.burnham_advisor = 0; // Andy Burnham
+// Q.eagle_advisor = 0; // Angela Eagle
+// Q.dodds_advisor = 0; // Anneliese Dodds
+// Q.reeves_advisor = 0; // Rachel Reeves
+// Q.lammy_advisor = 0; // David Lammy
 
 // Centre advisors
 Q.cooper_advisor = 1; // Yvette Cooper
-Q.starmer_advisor = 0; // Keir Starmer
-Q.nandy_advisor = 0; // Lisa Nandy
-Q.thornberry_advisor = 0; // Emily Thornberry
-Q.thomas-symonds_advisor = 0; // Nick Thomas-Symonds
-Q.healey_advisor = 0; // John Healey
+// Q.starmer_advisor = 0; // Keir Starmer
+// Q.nandy_advisor = 0; // Lisa Nandy
+// Q.thornberry_advisor = 0; // Emily Thornberry
+// Q.thomas-symonds_advisor = 0; // Nick Thomas-Symonds
+// Q.healey_advisor = 0; // John Healey
 
 // Right advisors
 Q.balls_advisor = 1; // Ed Balls
 Q.alexander_advisor = 1; // Douglas Alexander
-Q.johnson_advisor = 0; // Alan Johnson
-Q.benn_advisor = 0; // Hillary Benn
-Q.leslie_advisor = 0; // Chris Leslie
-Q.kendall_advisor = 0; // Liz Kendall
+// Q.johnson_advisor = 0; // Alan Johnson
+// Q.benn_advisor = 0; // Hillary Benn
+// Q.leslie_advisor = 0; // Chris Leslie
+// Q.kendall_advisor = 0; // Liz Kendall
 !}
 
 set-bg: img/map_3.jpg
