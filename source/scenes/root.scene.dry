@@ -552,8 +552,6 @@ Q.benn_advisor = 0; // Hillary Benn
 Q.leslie_advisor = 0; // Chris Leslie
 Q.kendall_advisor = 0; // Liz Kendall
 
-!}
-
 set-bg: img/map_3.jpg
 new-page: true
 
