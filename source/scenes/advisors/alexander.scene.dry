@@ -1,11 +1,11 @@
-title: Fritz Baade
+title: Douglas Alexander
 is-pinned-card: true
 tags: advisor, reformist
 card-image: img/portraits/BaadeFritz.jpg
-view-if: baade_advisor = 1
+view-if: alexander_advisor = 1
 new-page: true 
 
-= Fritz Baade
+= Douglas Alexander
 
 Baade is one of the few agricultural experts in the SPD, and an unorthodox economist.
 
