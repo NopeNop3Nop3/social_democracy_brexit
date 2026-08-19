@@ -1,8 +1,7 @@
 title: Choosing Our Enemies
 new-page: true
-view-if: year <= 1930 and enemies_timer <= 0
+view-if: enemies_timer <= 0
 on-arrival: month_actions += 1; enemies_timer = 18
-max-visits: 3
 is-card: true
 card-image: img/poster_1.png
 tags: party_affairs
@@ -13,11 +12,11 @@ In our media and campaign materials, who should we consider as our main opponent
 
 [? if enemies != 0 : Previously, we had considered the [+ enemies +] as our prior enemies. Is a change of direction necessary? ?]
 
-- @anti_dem: The anti-democratic parties of the far right and left - the KPD, NSDAP, and DNVP.
-- @far_right: The far right - the NSDAP and DNVP.
-- @nsdap: The NSDAP alone.
-- @kpd: The KPD.
-- @bourgeois: The bourgeois parties - the Center and DVP.
+- @greens: The Greens, who are trying to present themselves as the only anti-austerity Party.
+- @nationalists: The Nationalists, the Scottish National Party and Plaid Cymru, who threaten both the Union and our chance for a majority.
+- @libdems: The Liberal Democrats, who betrayed Progressive voters in an unholy alliance with the Conservatives.
+- @tories: The Conservative Party, our traditional enemies.
+- @ukip: UKIP, the main proponents of Brexit.
 - @easy_discard
 
 @anti_dem

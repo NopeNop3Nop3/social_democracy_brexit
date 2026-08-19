@@ -20,7 +20,7 @@ if (Q.economic_growth) {
 
 Resources available: [+ resources +]
 
-SPD position: [? if spd_toleration : toleration ?][? if spd_in_government : in government - ?][? if spd_toleration == 0 and spd_in_government == 0 and spd_caretaker == 0 : opposition ?][? if spd_caretaker : caretaker government ?]
+<span class ="tooltip"-text" title="Labour & Co-Operative Party" style="color: #e4003b;">**Labour**</span> position: [? if spd_toleration : toleration ?][? if spd_in_government : in government - ?][? if spd_toleration == 0 and spd_in_government == 0 and spd_caretaker == 0 : opposition ?][? if spd_caretaker : caretaker government ?]
 [? if in_weimar_coalition and spd_in_government: Weimar Coalition ?][? if in_grand_coalition and spd_in_government: Grand Coalition ?][? if in_popular_front and spd_in_government: Popular Front ?][? if in_left_front and spd_in_government: Left Front ?][? if in_spd_majority and spd_in_government: SPD majority ?][? if in_minority_government and spd_in_government: minority government ?][? if in_emergency_government and spd_in_government: emergency government ?]
 
 [? if spd_in_government and not in_spd_majority and not in_left_front : Coalition dissent: [+ coalition_dissent : coalition_dissent +] ?]
@@ -38,15 +38,15 @@ Prime Minister: [+ pm +] ([+ pm_party +])
 Reichstag composition:
 
 # 1928: 30, 1930: 25, 1932: 22
-<span class="tooltip-text" title="Labour Party">SPD</span>: [+ labour_r +]%
+<span class ="tooltip"-text" title="Labour & Co-Operative Party" style="color: #e4003b;">**Labour**</span>: [+ labour_r +]%
 # 1928: 15, 1930: 15, 1932: 
-<span class="tooltip-text" title="Green Party of England & Wales">Greens</span>: [+ green_r +]%
+<span class ="tooltip"-text" title="Green Party of England & Wales" style="color: #02a95b;">**Greens**</span>: [+ green_r +]%
 # 1928: 10, 1930: 13
-<span class="tooltip-text" title="Liberal Democrats">Lib Dems</span>!}: [+ libdem_r +]%
+<span class ="tooltip"-text" title="Liberal Democrats" style="color: #faa61a;">**Lib Dems**</span>: [+ libdem_r +]%
 # 1928: 5, 1930: 4 (as DstP)
-<span class="tooltip-text" title="Conservative & Unionist Party">Tories</span>: [+ tory_r +]%
+<span class ="tooltip"-text" title="Conservative & Unionist Party" style="color: #0087dc;">**Tories**</span>: [+ tory_r +]%
 # 1928: 9, 1930: 5
-<span class="tooltip-text" title="United Kingdom Independence Party">UKIP</span>: [+ ukip_r +]%
+<span class ="tooltip"-text" title="United Kingdom Independence Party" style="color: #6d3177;">**UKIP**</span>: [+ ukip_r +]%
 # 1928: 9, 1930: 10
 Others: [+ other_r +]%
 
@@ -71,19 +71,15 @@ Economic growth: [+ economic_growth_2 +]%
 = Inter-party Relations
 
 
-{!<span class="tooltip-text" title="Center Party">Z</span>!}: [+ z_relation : relationships +]
+<span class ="tooltip"-text" title="Green Party of England & Wales" style="color: #02a95b;">**Greens**</span>: [+ green_relation : relationships +]
 
-{!<span class="tooltip-text" title="German Democratic Party">!}[? if not ddp_name: DDP?][? if ddp_name != 0 : [+ ddp_name +]?]{!</span>!}: [+ ddp_relation : relationships +]
+<span class ="tooltip"-text" title="Liberal Democrats" style="color: #faa61a;">**Lib Dems**</span>: [+ libdem_relation : relationships +]
 
-{!<span class="tooltip-text" title="German People's Party">DVP</span>!}: [+ dvp_relation : relationships +]
+<span class ="tooltip"-text" title="Conservative & Unionist Party" style="color: #0087dc;">**Tories**</span>: [+ tory_relation : relationships +]
 
-{!<span class="tooltip-text" title="Communist Party of Germany">KPD</span>!}: [+ kpd_relation : relationships +]
+<span class ="tooltip"-text" title="United Kingdom Independence Party" style="color: #6d3177;">**UKIP**</span>: [+ ukip_relation : relationships +]
 
-{!<span class="tooltip-text" title="German National People's Party">DNVP</span>!}: [+ dnvp_relation : relationships +]
-
-{!<span class="tooltip-text" title="National-Socialist German Worker's Party (Nazis)">NSDAP</span>!}: [+ nsdap_relation : relationships +]
-
-= Internal Factions of the SPD
+= Internal Factions of the <span style="color: #e4003b;">**Labour Party**</span>
 
 {!<span class="tooltip-text" title="The Left is interested in radical, transformative policies and cooperation with the KPD.">Left</span>!} strength: [+ left_strength : strength +], dissent: [+ left_dissent : dissent +]
 
@@ -112,24 +108,31 @@ Q.pro_eu_disp = Math.round(Q.pro_eu);
 
 <span class ="tooltip"-text" title="Conservative & Unionist Party" style="color: #0087dc;">**Tories**</span>: [+ tory_votes +]%
 
-<span class ="tooltip"-text" title="United Kingdom Independence Party" style="color: #6d3177;">**UKIP**</span>:" [+ ukip_votes +]%
+<span class ="tooltip"-text" title="United Kingdom Independence Party" style="color: #6d3177;">**UKIP**</span>: [+ ukip_votes +]%
 
 Others: [+ other_votes +]%
 
+Support for the <span style="color: #003399;">**European**</span> <span style="color: #FFCC00;">**Union**</span>: [+ pro_eu_disp +]%
+
 **Detailed results for each demographic**
 
-Precariat: Greens: [+ precariat_green_display +]%, Labour: [+ precariat_labour_display +]%, Lib Dems: [+ precariat_libdem_display +]%, Tories: [+ precariat_tory_display +]%, UKIP: [+ precariat_ukip_display +]%; Others: [+ precariat_other_display +]%
+Precariat: 
+Greens: [+ precariat_green_display +]%, Labour: [+ precariat_labour_display +]%, Lib Dems: [+ precariat_libdem_display +]%, Tories: [+ precariat_tory_display +]%, UKIP: [+ precariat_ukip_display +]%; Others: [+ precariat_other_display +]%
 
-Emergent Service Workers: Greens: [+ service_workers_green_display +]%, Labour: [+ service_workers_labour_display +]%, Lib Dems: [+ service_workers_libdem_display +]%, Tories: [+ service_workers_tory_display +]%, UKIP: [+ service_workers_ukip_display +]%; Others: [+ service_workers_other_display +]%
+Emergent Service Workers: 
+Greens: [+ service_workers_green_display +]%, Labour: [+ service_workers_labour_display +]%, Lib Dems: [+ service_workers_libdem_display +]%, Tories: [+ service_workers_tory_display +]%, UKIP: [+ service_workers_ukip_display +]%; Others: [+ service_workers_other_display +]%
 
-Traditional Working Class: Greens: [+ traditional_workers_green_display +]%, Labour: [+ traditional_workers_labour_display +]%, Lib Dems: [+ traditional_workers_libdem_display +]%, Tories: [+ traditional_workers_tory_display +]%, UKIP: [+ traditional_workers_ukip_display +]%; Others: [+ traditional_workers_other_display +]%
+Traditional Working Class: 
+Greens: [+ traditional_workers_green_display +]%, Labour: [+ traditional_workers_labour_display +]%, Lib Dems: [+ traditional_workers_libdem_display +]%, Tories: [+ traditional_workers_tory_display +]%, UKIP: [+ traditional_workers_ukip_display +]%; Others: [+ traditional_workers_other_display +]%
 
-New Affluent Workers: Greens: [+ affluent_workers_green_display +]%, Labour: [+ affluent_workers_labour_display +]%, Lib Dems: [+ affluent_workers_libdem_display +]%, Tories: [+ affluent_workers_tory_display +]%, UKIP: [+ affluent_workers_ukip_display +]%; Others: [+ affluent_workers_other_display +]%
+New Affluent Workers: 
+Greens: [+ affluent_workers_green_display +]%, Labour: [+ affluent_workers_labour_display +]%, Lib Dems: [+ affluent_workers_libdem_display +]%, Tories: [+ affluent_workers_tory_display +]%, UKIP: [+ affluent_workers_ukip_display +]%; Others: [+ affluent_workers_other_display +]%
 
-Technical Middle Class: Greens: [+ technical_middle_green_display +]%, Labour: [+ technical_middle_labour_display +]%, Lib Dems: [+ technical_middle_libdem_display +]%, Tories: [+ technical_middle_tory_display +]%, UKIP: [+ technical_middle_ukip_display +]%; Others: [+ technical_middle_other_display +]%
+Technical Middle Class: 
+Greens: [+ technical_middle_green_display +]%, Labour: [+ technical_middle_labour_display +]%, Lib Dems: [+ technical_middle_libdem_display +]%, Tories: [+ technical_middle_tory_display +]%, UKIP: [+ technical_middle_ukip_display +]%; Others: [+ technical_middle_other_display +]%
 
-Established Middle Class: Greens: [+ established_middle_green_display +]%, Labour: [+ established_middle_labour_display +]%, Lib Dems: [+ established_middle_libdem_display +]%, Tories: [+ established_middle_tory_display +]%, UKIP: [+ established_middle_ukip_display +]%; Others: [+ established_middle_other_display +]%
+Established Middle Class: 
+Greens: [+ established_middle_green_display +]%, Labour: [+ established_middle_labour_display +]%, Lib Dems: [+ established_middle_libdem_display +]%, Tories: [+ established_middle_tory_display +]%, UKIP: [+ established_middle_ukip_display +]%; Others: [+ established_middle_other_display +]%
 
-Elites: Greens: [+  elites_green_display +]%, Labour: [+ elites_labour_display +]%, Lib Dems: [+  elites_libdem_display +]%, Tories: [+  elites_tory_display +]%, UKIP: [+  elites_ukip_display +]%; Others: [+  elites_other_display +]%
-
-Support for the European Union: [+ pro_eu_disp +]%
+Elites: 
+Greens: [+  elites_green_display +]%, Labour: [+ elites_labour_display +]%, Lib Dems: [+  elites_libdem_display +]%, Tories: [+  elites_tory_display +]%, UKIP: [+  elites_ukip_display +]%; Others: [+  elites_other_display +]%
